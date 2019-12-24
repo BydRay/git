@@ -31,3 +31,33 @@ git rm test.txt           # 工作区中删除了文件，然后从版本库中�
 
 git push origin master    # 推到远程
 
+
+
+
+git branch dev            # 创建dev分支
+
+
+git checkout dev          # 切换到dev分支
+git checkout -b dev       # 创建dev分支，然后切换到dev分支
+
+
+git branch                # 查看当前分支
+
+
+git merge dev             # git merge命令用于合并指定分支到当前分支
+
+
+git branch -d dev         # 删除dev分支
+
+
+
+git stash
+
+
+dev  
+
+
+
+
+
+
