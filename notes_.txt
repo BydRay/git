@@ -5,10 +5,14 @@ git    # 版本管理工具
 git init              # 创建一个版本库  
 
 git add               # 
+git add .
 
 git commit -m "..."   # 
 
 git status
 
-git diff              
+git diff              # 比较工作区和暂存区的不同
+
+git log
+git log --pretty=oneline
 
