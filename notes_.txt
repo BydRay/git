@@ -44,19 +44,25 @@ git checkout -b dev       # 创建dev分支，然后切换到dev分支
 git branch                # 查看当前分支
 
 
-git merge dev             # git merge命令用于合并指定分支到当前分支
+git merge dev             # git merge命令用于合并指定分支到当前分支。  git status也可以告诉我们冲突的文件，然后查看冲突的文件，去掉<<<<<<<，=======，>>>>>>>，然后用git add , git commit 重新提交。   git log --graph --pretty=oneline 以看到分支的合并情况
 
 
 git branch -d dev         # 删除dev分支
 
 
 
-git stash
+
+git stash                 # 可以把当前工作现场“储藏”起来。  用git status查看工作区，就是干净的（除非有没有被Git管理的文件）
 
 
-dev  
+git stash list            
 
-master
+            
+git stash apply stash@{0} # 用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+
+
+git stash pop             # 恢复的同时把stash内容也删了
+
 
 
 
