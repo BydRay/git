@@ -26,6 +26,8 @@ git checkout -- readme.md  # readme.md文件在工作区的修改全部撤销，
 
 git reset HEAD readme.md  # 将提交的暂存区的修改版本撤销掉（unstage）
 
-git rm test.txt           # 工作区中删除了文件，然后从版本库中删除该文件
+git rm test.txt           # 工作区中删除了文件，然后从版本库中删除该文件，也可以用git add 来更新删除信息到暂存区。如果是删错了，用git checkout -- test.txt 还原。 
 
+
+git push origin master    # 推到远程
 
