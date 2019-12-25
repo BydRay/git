@@ -1,11 +1,13 @@
 
 #############################
-git    # 版本管理工具   https://www.cnblogs.com/alex3714/articles/5930846.html
+#git    版本管理工具   https://www.cnblogs.com/alex3714/articles/5930846.html
 
 #############################
 # 基本操作 
 
 git init                   # 创建一个版本库  
+aaa
+
 
 git add                    # 工作区提交到暂存区(Stage)
 git add .                  # 所有的文件一起提交
