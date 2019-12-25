@@ -1,8 +1,10 @@
 
-
+#############################
 git    # 版本管理工具   https://www.cnblogs.com/alex3714/articles/5930846.html
 
-# 基本操作
+#############################
+# 基本操作 
+
 git init                   # 创建一个版本库  
 
 git add                    # 工作区提交到暂存区(Stage)
@@ -34,7 +36,9 @@ git push origin master    # 推到远程
 
 
 
-# 分支管理
+#############################
+# 分支管理 
+
 git branch dev            # 创建dev分支
 
 
@@ -52,7 +56,9 @@ git branch -d dev         # 删除dev分支
 
 
 
-# 保存现场
+#############################
+# 保存现场 
+
 git stash                 # 可以把当前工作现场“储藏”起来。  用git status查看工作区，就是干净的（除非有没有被Git管理的文件）
 
 
@@ -66,8 +72,41 @@ git stash pop             # 恢复的同时把stash内容也删了
 
 
 
+#############################
 # 多人协作
+
 git remote                # 查看远程库的信息   远程仓库的默认名称是origin   -v显示更详细的信息
+
+
+git push origin dev       # 要推送其他分支，比如dev
+
+
+git checkout -b dev origin/dev      # 创建远程origin的dev分支到本地
+
+
+git pull                  # 当git pull失败，原因是没有指定本地dev分支与远程origin/dev分支的链接，根据提示，设置dev和origin/dev的链接            ：git branch --set-upstream-to=origin/dev dev   
+
+
+
+
+#############################
+# 在GitHub上，可以任意Fork开源仓库；自己拥有Fork后的仓库的读写权限；可以推送pull request给官方仓库来贡献代码。
+
+
+
+
+#############################
+# .gitignore
+
+git add -f App.class             # 想添加一个文件到Git，但发现添加不了，原因是这个文件被.gitignore忽略了，可以用-f强制添加到Git
+
+
+git check-ignore -v App.class    # 发现可能.gitignore写得有问题，需要找出来到底哪个规则写错了，可以用git check-ignore命令检查
+
+
+
+
+
 
 
 
