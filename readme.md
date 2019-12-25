@@ -10,6 +10,7 @@ aaa
 
 
 git add                    # 工作区提交到暂存区(Stage)
+
 git add .                  # 所有的文件一起提交
 
 git commit -m "..."        # 暂存区的所有内容提交到当前分支
