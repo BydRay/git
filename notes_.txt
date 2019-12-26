@@ -82,15 +82,15 @@ git pull                  # 当git pull失败，原因是没有指定本地dev�
 
 
 #############################
-.gitignore
+.gitignore                       # 要放在根目录
 
 git add -f App.class             # 想添加一个文件到Git，但发现添加不了，原因是这个文件被.gitignore忽略了，可以用-f强制添加到Git
 
 git check-ignore -v App.class    # 发现可能.gitignore写得有问题，需要找出来到底哪个规则写错了，可以用git check-ignore命令检查
 
+git rm --cached 文件名           # 想gitignore已经存在仓库的文件，从git仓库中删除这个已经被跟踪的文件
 
-
-
+git rm --cached -r 目录          # 删目录
 
 
 
